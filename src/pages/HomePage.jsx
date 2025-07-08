@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
-import ChessBoard from './Chessboard';
+import ChessBoard from './ChessGame';
 
 const HomePage = () => {
     const navigate = useNavigate()
@@ -10,9 +10,13 @@ const HomePage = () => {
     navigate('/signupoptions');
   };
 
-  const handleLogin = () => {
+    const handleLogin = () => {
     navigate('/login');
   };
+
+  const handlePlay = () => {
+    navigate('/play')
+  }
 
   return (
     <div className="chess-homepage">
@@ -24,7 +28,7 @@ const HomePage = () => {
             <span className="logo-text">Chess.com</span>
           </div>
           <ul className="nav-links">
-            <li><a href="#">Play</a></li>
+            <li><a onClick={handlePlay}>Play</a></li>
             <li><a href="#">Puzzles</a></li>
             <li><a href="#">Learn</a></li>
             <li><a href="#">Watch</a></li>
