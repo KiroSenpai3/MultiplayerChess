@@ -1,0 +1,248 @@
+/* ChessHomepage.css */
+
+/* Base Styles */
+.chess-homepage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+.chess-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.logo-piece {
+  color: #779556;
+  margin-right: 8px;
+}
+
+.logo-text {
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #779556;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+}
+
+.sign-in {
+  background: transparent;
+  color: #e0e0e0;
+}
+
+.sign-up {
+  background: #779556;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #d9c4c4;
+}
+
+.hero-buttons {
+  display: flex;
+}
+
+.play-free {
+  background: #779556;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.learn-more {
+  background: transparent;
+  color: #779556;
+  border: 1px solid #779556;
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.hero-board {
+  flex: 1;
+}
+
+.chess-board {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: #f0f0f0;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.board-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #b9a97c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #779556;
+  font-size: 24px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.feature {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  color: #e0e0e0;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Footer */
+.chess-footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-links a:hover {
+  color: #779556;
+}
+
+.copyright {
+  color: #999;
+  font-size: 14px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+.sign-up:hover {
+  background: #5a7a40;
+}
+.sign-in:hover {
+  color: #5a7a40;
+}
+
+.btn {
+  transition: all 0.2s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .features {
+    flex-direction: column;
+  }
+  
+  .feature {
+    margin-bottom: 30px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+}
